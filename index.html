@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adfin8 Attendance</title>
+
+  <style>
+    body {
+      background-color: #f4f6f8;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    .card {
+      background-color: white;
+      width: 380px;
+      margin: auto;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #1f4fd8;
+    }
+
+    input, button {
+      width: 95%;
+      padding: 12px;
+      margin: 8px 0;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #1f4fd8;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card" id="loginScreen">
+    <h1>Adfin8 Login</h1>
+    <input type="text" id="username" placeholder="Enter Username" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div class="card" id="attendanceScreen" style="display:none;"><h3>Attendance History</h3>
+<ul id="historyList"></ul>
+    <h1>Welcome, <span id="userNameText"></span></h1>
+    <button onclick="markAttendance()">Mark Attendance</button>
+  </div>
+
+  <div class="card" id="historyScreen" style="display:none;">
+    <h3>Attendance History</h3>
+    <ul id="historyList"></ul>
+  </div>
+
+  <!-- LINK JS FILE -->
+  <script src="script.js"></script>
+
+</body>
+</html>
